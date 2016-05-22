@@ -1,0 +1,9 @@
+{
+    "name": "coex-plugin-detect-ubuntu",
+    "repository": "https://github.com/tusur-coex/coex-plugin-detect-ubuntu.git",
+    "version": "0.1",
+    "maintainer": {
+		"name": "Evgenii Sopov",
+		"email": "mrseakg@gmail.com"
+	}
+}
