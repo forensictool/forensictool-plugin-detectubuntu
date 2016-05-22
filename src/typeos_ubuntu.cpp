@@ -15,6 +15,7 @@ void TypeOS_Ubuntu::setPlatform(QString platform){
 };
 
 QString TypeOS_Ubuntu::version() const{
+	return m_sVersion;
 };
 
 void TypeOS_Ubuntu::setVersion(QString version){

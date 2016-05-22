@@ -1,9 +1,16 @@
 {
-    "name": "coex-plugin-detect-ubuntu",
+    "name": "libcoex-plugin-detect-ubuntu0",
+    "project": "coex-plugin-detect-ubuntu.pro",
+    "description": "Plugin detection os of Ubuntu for coex application",
     "repository": "https://github.com/tusur-coex/coex-plugin-detect-ubuntu.git",
-    "version": "0.1",
+    "version": {
+		"major": "0",
+		"minor": "1",
+		"build": "5"
+	},
     "maintainer": {
 		"name": "Evgenii Sopov",
 		"email": "mrseakg@gmail.com"
-	}
+	},
+	"architecture": "amd64"
 }
