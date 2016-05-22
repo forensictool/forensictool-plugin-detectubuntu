@@ -1,5 +1,6 @@
 {
     "name": "libcoex-plugin-detect-ubuntu0",
+    "lib": "libcoex-plugin-detect-ubuntu.so",
     "project": "coex-plugin-detect-ubuntu.pro",
     "description": "Plugin detection os of Ubuntu for coex application",
     "repository": "https://github.com/tusur-coex/coex-plugin-detect-ubuntu.git",
