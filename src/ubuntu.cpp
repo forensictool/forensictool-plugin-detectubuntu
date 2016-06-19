@@ -6,7 +6,7 @@
 #include <QIODevice>
 #include <QList>
 #include <iostream>
-#include "typeos_ubuntu.h"
+#include "coex/v0.2.2/helpers/typeos_ubuntu.h"
 
 coex::ITypeOperationSystem* DetectUbuntu::detect(QString path) {
 	QString ubuntu_15_04 = path + "/lib/modules/3.19.0-42-generic/kernel/ubuntu";
@@ -21,11 +21,11 @@ coex::ITypeOperationSystem* DetectUbuntu::detect(QString path) {
 };
 
 QString DetectUbuntu::name() {
-	return "detectUbuntu";
+	return "detectorUbuntu (15.04|15.10)";
 };
 
 QString DetectUbuntu::author() {
-	return "Evgenii Sopov";
+	return "Evgenii Sopov <mrseakg@gmail.com>";
 };
 
 QVector<coex::ITypeOperationSystem *> DetectUbuntu::getSupportsOS() {
@@ -35,6 +35,6 @@ QVector<coex::ITypeOperationSystem *> DetectUbuntu::getSupportsOS() {
 	return supportsOS;
 };
 
-coex::IDetectOperationSystem* createDetectOperationSystem() {
-	return (coex::IDetectOperationSystem*)(new DetectUbuntu());
+coex::IDetectorOperationSystem* createDetectorOperationSystem() {
+	return (coex::IDetectorOperationSystem*)(new DetectUbuntu());
 }

@@ -3,7 +3,7 @@
 
 #include "coex.h"
 #include <QString>
-class DetectUbuntu : coex::IDetectOperationSystem {
+class DetectUbuntu : coex::IDetectorOperationSystem {
 	public:
 		virtual coex::ITypeOperationSystem* detect(QString path);
 		virtual QString name();
@@ -13,7 +13,7 @@ class DetectUbuntu : coex::IDetectOperationSystem {
 
 extern "C"
 {
-	coex::IDetectOperationSystem* createDetectOperationSystem();
+	coex::IDetectorOperationSystem* createDetectorOperationSystem();
 }
 
 #endif //__UBUNTU_H__

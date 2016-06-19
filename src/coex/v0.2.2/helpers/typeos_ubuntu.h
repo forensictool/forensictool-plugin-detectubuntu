@@ -1,8 +1,9 @@
-#ifndef __TYPEOS_UBUNTU_H__
-#define __TYPEOS_UBUNTU_H__
+#ifndef __COEX_HELPERS_TYPEOS_UBUNTU_H__
+#define __COEX_HELPERS_TYPEOS_UBUNTU_H__
 
 #include "coex.h"
 #include <QString>
+
 class TypeOS_Ubuntu : public coex::ITypeOperationSystem {
 	public:
 		TypeOS_Ubuntu(QString version);
@@ -16,4 +17,4 @@ class TypeOS_Ubuntu : public coex::ITypeOperationSystem {
 		QString m_sVersion;
 };
 
-#endif //__TYPEOS_UBUNTU_H__
+#endif //__COEX_HELPERS_TYPEOS_UBUNTU_H__
