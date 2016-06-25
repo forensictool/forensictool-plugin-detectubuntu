@@ -1,5 +1,5 @@
 {
-	"repository": "https://github.com/tusur-coex/coex-plugin-detect-ubuntu.git",
+	"repository": "https://github.com/forensictool/forensictool-plugin-detectubuntu.git",
 	"maintainer": {
 		"name": "Evgenii Sopov",
 		"email": "mrseakg@gmail.com"
@@ -10,8 +10,8 @@
 	"build" : [
 		{
 			"type" : "lib",
-			"description" : "Plugin detection os of Ubuntu (15.04 | 15.10) for coex-core application",
-			"name" : "libcoex-plugin-detect-ubuntu",
+			"description" : "Plugin detection os of Ubuntu (15.04 | 15.10) for forensictool application",
+			"name" : "libforensictool-plugin-detectubuntu",
 			"project" : "lib.pro",
 			"depends" : [
 				"libc6"

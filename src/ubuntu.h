@@ -1,19 +1,19 @@
-#ifndef __UBUNTU_H__
-#define __UBUNTU_H__
+#ifndef __FORENSICTOOL_PLUGIN_DETECTUBUNTU_H__
+#define __FORENSICTOOL_PLUGIN_DETECTUBUNTU_H__
 
-#include "coex.h"
+#include "forensictool.h"
 #include <QString>
-class DetectUbuntu : coex::IDetectorOperationSystem {
+class DetectUbuntu : forensictool::IDetectorOperationSystem {
 	public:
-		virtual coex::ITypeOperationSystem* detect(QString path);
+		virtual forensictool::ITypeOperationSystem* detect(QString path);
 		virtual QString name();
 		virtual QString author();
-		virtual QVector<coex::ITypeOperationSystem *> getSupportsOS();
+		virtual QVector<forensictool::ITypeOperationSystem *> getSupportsOS();
 };
 
 extern "C"
 {
-	coex::IDetectorOperationSystem* createDetectorOperationSystem();
+	forensictool::IDetectorOperationSystem* createDetectorOperationSystem();
 }
 
-#endif //__UBUNTU_H__
+#endif //__FORENSICTOOL_PLUGIN_DETECTUBUNTU_H__

@@ -6,9 +6,9 @@
 #include <QIODevice>
 #include <QList>
 #include <iostream>
-#include "coex/v0.2.2/helpers/typeos_ubuntu.h"
+#include "forensictool-core/v0.3.1/helpers/typeos_ubuntu.h"
 
-coex::ITypeOperationSystem* DetectUbuntu::detect(QString path) {
+forensictool::ITypeOperationSystem* DetectUbuntu::detect(QString path) {
 	QString ubuntu_15_04 = path + "/lib/modules/3.19.0-42-generic/kernel/ubuntu";
 	QString ubuntu_15_10 = path + "/lib/modules/4.2.0-16-generic/kernel/ubuntu";
 	
@@ -28,13 +28,13 @@ QString DetectUbuntu::author() {
 	return "Evgenii Sopov <mrseakg@gmail.com>";
 };
 
-QVector<coex::ITypeOperationSystem *> DetectUbuntu::getSupportsOS() {
-	QVector<coex::ITypeOperationSystem *> supportsOS;
-	supportsOS.push_back((coex::ITypeOperationSystem *)(new TypeOS_Ubuntu("15.10")));
-	supportsOS.push_back((coex::ITypeOperationSystem *)(new TypeOS_Ubuntu("15.04")));
+QVector<forensictool::ITypeOperationSystem *> DetectUbuntu::getSupportsOS() {
+	QVector<forensictool::ITypeOperationSystem *> supportsOS;
+	supportsOS.push_back((forensictool::ITypeOperationSystem *)(new TypeOS_Ubuntu("15.10")));
+	supportsOS.push_back((forensictool::ITypeOperationSystem *)(new TypeOS_Ubuntu("15.04")));
 	return supportsOS;
 };
 
-coex::IDetectorOperationSystem* createDetectorOperationSystem() {
-	return (coex::IDetectorOperationSystem*)(new DetectUbuntu());
+forensictool::IDetectorOperationSystem* createDetectorOperationSystem() {
+	return (forensictool::IDetectorOperationSystem*)(new DetectUbuntu());
 }

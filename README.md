@@ -1,4 +1,4 @@
-# coex-plugin for detection Ubuntu OS
+# forensictool-plugin for detection Ubuntu OS
 
 ## Build
 
